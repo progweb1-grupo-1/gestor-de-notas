@@ -1,0 +1,87 @@
+body {
+  background-color: #2a2a2a;
+  color: white;
+  margin: 0;
+  height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container{
+  width: 100%;
+  height: 100vh;
+}
+
+.navbar-brand{
+  font-size: 2em;
+  color: white;
+}
+
+.mymodal{
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, .7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.mymodal.is-open{
+  display: grid;
+}
+
+.mymodal-container{
+  color: #000;
+  position: relative;
+  min-width: 320px;
+  width: 350px;
+  overflow-y: auto;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.mymodal-close{
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  border: none;
+  background: none;
+  padding: 5px;
+  border-radius: 5px;
+  width: 35px;
+  height: 35px;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.mymodal-close:hover{
+  color: #ccc;
+}
+
+.modalHeader{
+  padding: .5rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.modalFooter{
+  margin-top: 1rem;
+  border-top: 1px solid #ccc;
+  padding-top: 1rem;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 1rem;
+}
